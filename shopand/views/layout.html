@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{{title}}</title>
+
+        <!--meta data-->
+        <meta charset="utf-8">
+        <meta name="description" content="shop& project">
+        <meta name="keywords" content="shop, kaist, sparcs">
+        <meta name="author" content="shopand@sparcs.org">
+
+        <!--scripts-->
+        <script type="text/javascript" src="/static/js/layout.js"></script>
+        {{{yield-js}}}
+
+        <!--stylesheets-->
+        <link rel="stylesheet" type="text/css" href="/static/css/layout.css">
+        {{{yield-css}}}
+    </head>
+    <body>
+        <nav id="nav">
+        </nav>
+        <div id="wrapper">
+            {{{yield-content}}}
+        </div>
+    </body>
+</html>
