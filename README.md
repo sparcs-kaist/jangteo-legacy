@@ -1,6 +1,6 @@
-shopand
+JANGTEO
 =======
 
 Online market place for used things.
 
-slack : #shopand
+slack : #jangteo
