@@ -15,6 +15,27 @@ view.init = function(req, res){
 };
 
 /*
+ * Routes related to a item
+ */
+
+var item = {};
+
+item.add = function(req, res){
+};
+
+item.show = function(req, res){
+};
+
+item.remove = function(req, res){
+};
+
+item.buy = function(req, res){
+};
+
+item.sell = function(req, res){
+};
+
+/*
  * Route initialize
  */
 

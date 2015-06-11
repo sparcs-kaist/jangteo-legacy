@@ -5,7 +5,7 @@
  */
 
 var app = require('../apps/init');
-var debug = require('debug')('shopand:server');
+var debug = require('debug')('jangteo:server');
 var http = require('http');
 
 /*

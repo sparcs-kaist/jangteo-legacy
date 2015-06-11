@@ -26,7 +26,7 @@ var app = express();
 
 /*
 app.use(session({
-    secret: 'shopand_session',
+    secret: 'jangteo_session',
     resave: true,
     saveUninitialized: true
 }));
@@ -51,7 +51,7 @@ passport.deserializeUser(User.deserializeUser());
  * Setup application port number
  */
 
-app.port = '10101';
+app.port = '12345';
 
 /*
  * Setup view engine
@@ -83,7 +83,7 @@ app.use(cookieParser());
  */
 
 var routes = [
-    'shop/route'
+    'market/route'
     //'app_name/route'
 ];
 routes.forEach(function(route){
@@ -106,7 +106,7 @@ db.once('open', function(){
     });
 });
 
-mongoose.connect('mongodb://localhost:38716/shopand');
+mongoose.connect('mongodb://localhost:38716/jangteo');
 
 /*
  * Catch 404 and forward to error handler
