@@ -14,13 +14,42 @@
         {{{yield-js}}}
 
         <!--stylesheets-->
+        <link rel="stylesheet" type="text/css" href="/static/css/fonts.css">
         <link rel="stylesheet" type="text/css" href="/static/css/layout.css">
         {{{yield-css}}}
     </head>
     <body>
-        <nav id="nav">
-        </nav>
-        <div id="wrapper">
+        <div id="popup-wrapper">
+            {{{yield-popup}}}
+        </div>
+        <div id="nav-wrapper">
+            <div id="nav">
+                <h1 class="nav-logo">
+                    <a href="/">JANG TEO.</a>
+                </h1>
+                <ul class="nav-list">
+                    <li class="nav-item-buy selected">
+                        <a href="#">사고,</a>
+                    </li>
+                    <li class="nav-item-sell">
+                        <a href="#">팔고,</a>
+                    </li>
+                    <li class="nav-item-share">
+                        <a href="#">나누기.</a>
+                    </li>
+                </ul>
+                <ul class="pfl-list">
+                    <li class="pfl-item-profile">
+                        <a href="#">내 정보</a>
+                    </li>
+                    <li class="pfl-item-cart">
+                        <a href="#">장바구니</a>
+                        <span class="pfl-item-cart-num">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content-wrapper">
             {{{yield-content}}}
         </div>
     </body>

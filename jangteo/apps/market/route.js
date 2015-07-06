@@ -11,7 +11,9 @@ var express = require('express');
 var view = {};
 
 view.init = function(req, res){
-    res.send("shopand initialized");
+    res.render('market', {
+        layout: 'layout'
+    });
 };
 
 /*

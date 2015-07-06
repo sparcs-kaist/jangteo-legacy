@@ -72,7 +72,7 @@ app.use('/static', express.static(path.join(__dirname, '../static')));
  * Setup logger, bodyParser, cookieParser and favicon
  */
 
-//app.use(favicon(path.join(__dirname, '../static/favicon.ico')));
+app.use(favicon(path.join(__dirname, '../static/res/jangteo.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
